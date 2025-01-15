@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Poem Project</title>
@@ -13,7 +14,7 @@
       </header>
 
       <main>
-        <form action="">
+        <form action="" id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter a topic for the poem"
@@ -24,11 +25,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          Shall I compare thee to a summer’s day?
-          <br />
-          Thou art more lovely and more temperate
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
 
       <footer>
